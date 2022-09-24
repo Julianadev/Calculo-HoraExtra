@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='style.css'>
+  <title>Calculo Horas Extras</title>
+</head>
+<body>
+  
+    <div class="divprincipal">
+  
+      <form>
+        <h3 class="titulo">Calcule o valor das suas horas extras</h3>
+          <div class="question1">
+            <p>Qual seu salário bruto?</p>
+              <input type="number" 
+              value=""
+              id="idquestion1" 
+              required>
+          </div>
+          <div class="question2">
+            <p>Qual sua jornada mensal?</p>
+            <input type="number" 
+            value=" "
+            id="idquestion2"
+            required>
+          </div>
+            <div class="question3">
+              <p>Quantas horas extras você trabalhou?</p>
+              <input type="number"
+               value=" " 
+               id="idquestion3" 
+               required>
+            </div>
+              <div class="question4">
+                <p>Quantos domingos ou feriados foram trabalhados?</p>
+                <input type="number"
+                 value=" "
+                 id="idquestion4" 
+                 required>
+              </div>
+              <div class="divbotao">
+                <button onclick="calcular();"
+                id="botao"
+                type="submit">
+                  <span class="textbotao">Calcular</span>
+                </button>
+               </div>
+        </form>
+      </div>
+            <div class="divtriangulo"></div>
+              <div class="divresultado">
+                <h3>Valor total do salário:</h3>
+                  <span id="resultado"></span>
+                <h3>Valor das horas extras:</h3>
+                  <span id="resultadoextra"></span></br>
+              </div>
+      
+
+      <script  src="JS/jquery-3.5.1.min.js"></script>
+      <script  src="JS/jquery.mask.js"></script>
+      <script src="JS/main.js"> </script>
+
+  </body>
+</html>
